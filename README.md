@@ -1,4 +1,4 @@
-# 🛡️ Secure Edge-Vision Gateway
+# Secure Edge-Vision Gateway
 
 ![Status](https://img.shields.io/badge/Status-Live-success)
 ![Tech](https://img.shields.io/badge/Stack-YOLOv11%20|%20OpenVINO%20|%20Flask-blue)
@@ -10,7 +10,7 @@ This project acts as a middleware "Gateway" that processes raw video streams loc
 
 ---
 
-##  Key Engineering Features
+## Key Engineering Features
 
 ### 1. **Privacy by Design**
 Unlike standard face detection (which often fails on side profiles), this system uses **YOLOv11-Pose** to track the human skeleton. It calculates the head position based on shoulder and ear keypoints, creating a robust "Privacy Mask" even when the face is partially obscured.
@@ -32,8 +32,8 @@ Implements a **Producer-Consumer Threading Model**:
 
 ---
 
-##  Tech Stack
+## Tech Stack
 - **AI Core:** Ultralytics YOLOv11 (Pose Estimation)
-- **Inference Engine:** Intel OpenVINO™ (FP16/INT8 Quantization)
+- **Inference Engine:** Intel OpenVINO (FP16/INT8 Quantization)
 - **Backend:** Python, Flask (Streaming Server)
 - **Computer Vision:** OpenCV (Threading, Image Processing)
